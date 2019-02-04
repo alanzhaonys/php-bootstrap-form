@@ -1,8 +1,14 @@
 {
-	"name": "avbdr/php-bootstrap-form",
+	"name": "alanzhaonys/php-bootstrap-form",
 	"description": "PHP Bootstrap Form Helper",
 	"license": "MIT",
     "authors": [
+        {
+            "name": "Alan Zhao",
+            "email": "alanzhaonys@yahoo.com",
+            "homepage": "",
+            "role": "Forker"
+        },
         {
             "name": "Alexander V. Butenko",
             "email": "a.butenka@gmail.com",
