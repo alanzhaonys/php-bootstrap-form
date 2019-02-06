@@ -21,12 +21,22 @@ abstract class FormView extends Base {
 
         $this->_form->getErrorView()->render();
         echo '<form ', $this->_form->getAttributes(), "><!--csrftoken--><fieldset> ";
+
+        if ($this->class == 'Inline') {
+          echo '<div class="row">';
+        }
+
         if ($onlyElement && $onlyElement == 'open')
             return;
 
         $elements = $this->_form->getElements();
         foreach ($elements as $element)
-            $this->renderElement ($element);
+          $this->renderElement ($element);
+
+        if ($this->class == 'Inline') {
+          echo '</div>';
+        }
+
         $this->renderFormClose();
     }
 
