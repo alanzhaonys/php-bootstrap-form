@@ -22,7 +22,7 @@ abstract class FormView extends Base {
         $this->_form->getErrorView()->render();
         echo '<form ', $this->_form->getAttributes(), "><!--csrftoken--><fieldset> ";
 
-        if ($this->class == 'Inline') {
+        if ($this->class == 'form-inline') {
           echo '<div class="row">';
         }
 
@@ -33,7 +33,7 @@ abstract class FormView extends Base {
         foreach ($elements as $element)
           $this->renderElement ($element);
 
-        if ($this->class == 'Inline') {
+        if ($this->class == 'form-inline') {
           echo '</div>';
         }
 
